@@ -1,0 +1,26 @@
+{
+  "name": "fundstarter",
+  "version": "1.0.0",
+  "description": "node and express simple app",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Spoorthya/fundstarter.git"
+  },
+  "keywords": [
+    "express",
+    "heroku"
+  ],
+  "author": "Peter",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Spoorthya/fundstarter/issues"
+  },
+  "homepage": "https://github.com/Spoorthya/fundstarter#readme",
+  "dependencies": {
+    "express": "^4.14.0"
+  }
+}

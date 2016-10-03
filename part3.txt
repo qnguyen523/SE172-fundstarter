@@ -1,0 +1,15 @@
+// My name: Quoc Nguyen
+// Homework 2
+// Class: SE 172 
+
+// This is Part 3
+
+Asynchronous Read:
+Pros: Asynchronous methods take the last parameter as the completion function callback and the first parameter of the callback function as error. Therefore, it protects data from unwanted modifications, and the program never get blocked during its execution.
+Cons: data in callback function cannot be changed when necessary.
+Synchronous Read:
+Pros: data in callback function is easily changed when needed.
+Cons: Program may get block when errors occur.
+file reading by using open() and read() callback functions of fs:
+Pros: Programmers can have control of read and write by using flags in open() function.
+Cons: The syntax and procedure are more complex.
