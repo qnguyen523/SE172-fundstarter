@@ -2,7 +2,7 @@
 // Homework 2
 // Class: SE 172 
 
-// This is Part 1 a)
+// This is Part 1 b)
 var express = require('express')
 var app = express()
 var fs = require('fs');
@@ -15,8 +15,11 @@ app.set('port', (process.env.PORT || 8080))
 app.get('/', function(request, response)
 {
 	// handle send file here.
-	var data = fs.readFileSync('public/index.html');
-	response.send(data.toString());
+	fs.readFile('public/index.html',function(err, data)
+	{
+		if (err) throw err;
+		response.send(data.toString());
+	});
     // response.sendFile('public/index.html',{root:__dirname})
 
  // sends an entire HTTP response to the client,                                                                                                                                     
