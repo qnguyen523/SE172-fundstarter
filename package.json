@@ -17,10 +17,10 @@
   "author": "Peter",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/qnguyen523/SE172-fundstarter"
+    "url": "https://github.com/qnguyen523/SE172-fundstarter/issues"
   },
   "homepage": "https://github.com/qnguyen523/SE172-fundstarter#readme",
   "dependencies": {
-    "express": "^4.14.0"
+    "express": "~4.14.0"
   }
 }
