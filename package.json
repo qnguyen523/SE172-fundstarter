@@ -1,5 +1,5 @@
 {
-  "name": "fundstarter",
+  "name": "SE172-fundstarter",
   "version": "1.0.0",
   "description": "node and express simple app",
   "main": "index.js",
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Spoorthya/fundstarter.git"
+    "url": "git+https://github.com:qnguyen523/SE172-fundstarter.git"
   },
   "keywords": [
     "express",
@@ -17,9 +17,9 @@
   "author": "Peter",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Spoorthya/fundstarter/issues"
+    "url": "https://github.com/qnguyen523/SE172-fundstarter"
   },
-  "homepage": "https://github.com/Spoorthya/fundstarter#readme",
+  "homepage": "https://github.com/qnguyen523/SE172-fundstarter#readme",
   "dependencies": {
     "express": "^4.14.0"
   }
