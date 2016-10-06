@@ -1,7 +1,7 @@
 {
   "name": "SE172-fundstarter",
   "version": "1.0.0",
-  "description": "node and express simple app",
+  "description": "node and http simple app",
   "main": "index.js",
   "scripts": {
     "test": "node index.js"
