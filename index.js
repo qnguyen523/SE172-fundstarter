@@ -2,15 +2,18 @@
 // Homework 2
 // Class: SE 172 
 
-// This is Part 1 a)
-
+// This is Part 1 b)
 var fs = require('fs');
 var http = require("http");
 http.createServer(function (request, response)
 {
-	var data = fs.readFileSync('public/index.html');
-	response.write(data.toString());
-	response.end();
+	// handle send file here.
+	fs.readFile('public/index.html',function(err, data)
+	{
+		if (err) throw err;
+		response.write(data.toString());
+		response.end();
+	});
 }).listen(8080);
 
 console.log('Node app is running at port:8080');
