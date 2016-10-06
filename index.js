@@ -2,7 +2,7 @@
 // Homework 2
 // Class: SE 172 
 
-// This is Part 1 b)
+// This is Part 1 a)
 
 var http = require('http');
 var port = Number(process.env.PORT || 8080);
@@ -19,19 +19,11 @@ var requestListener = function(req, res){
 		return;
 	}});
 
-	fs.readFile('public/index.html', function (err, data) {
-   if (err) {
-		 res.writeHead(400, {"Content-Type": "text/html"});
-		 res.write("Error\n");
-		 res.end();
-      return;
-   }
-	 res.writeHead(200, {"Content-type":"text/html"});
 
+	var data = fs.readFileSync('public/index.html');
+	res.writeHead(200, {"Content-type":"text/html"});
     res.end(data);
-});
-
-}
+};
 
 var server = http.createServer(requestListener);
 server.listen(port,function(){
