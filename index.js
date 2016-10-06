@@ -2,7 +2,7 @@
 // Homework 2
 // Class: SE 172 
 
-// This is Part 2
+// This is Part 1 a)
 
 var http = require('http');
 var port = Number(process.env.PORT || 8080);
